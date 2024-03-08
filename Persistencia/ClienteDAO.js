@@ -65,7 +65,7 @@ export default class ClienteDAO{
             termoDePesquisa = "";
         }
         let sql="";
-        if (isNaN(termoDePesquisa)){ //termo de pesquina não é um número
+        if (isNaN(parseInt(termoDePesquisa))){ //termo de pesquina não é um número
             sql = `SELECT * FROM cliente WHERE nome LIKE ?`;
             termoDePesquisa= '%' + termoDePesquisa + '%';
         }

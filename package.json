@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/rfsgoncalves/backend#readme",
   "dependencies": {
+    "express": "^4.18.3",
     "mysql2": "^3.9.1"
   }
 }

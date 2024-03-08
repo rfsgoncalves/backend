@@ -10,6 +10,7 @@ const rotaCliente = new Router();
 const cliCtrl = new ClienteCtrl();
 
 rotaCliente
+.get('/', cliCtrl.consultar)
 .get('/:termo', cliCtrl.consultar)  //atribuindo a função consultar como parâmetro do que executar quando receber um método get na rota
 .post('/', cliCtrl.gravar)
 .put('/:codigo', cliCtrl.atualizar)
